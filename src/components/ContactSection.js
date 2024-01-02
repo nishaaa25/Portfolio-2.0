@@ -32,18 +32,18 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="w-full pt-[72px] z-10">
-      <h1 className="text-[42px] pb-2 font-semibold tracking-[0.9px]">
+    <div className="w-full pt-8 lg:pt-[72px] z-10">
+      <h1 className="text-3xl lg:text-[42px] mb-2 lg:mb-6 font-semibold tracking-[0.9px]">
         Contact Me
       </h1>
-      <p className="text-2xl text-white text-opacity-[50.0%] mb-12">
+      <p className="text-xl lg:text-2xl text-white text-opacity-[50.0%] mb-12">
         Thank you for exploring my portfolio! If you have any inquiries or
         opportunities, feel free to get in touch. I'm always open to
         collaboration and new challenges.
       </p>
-      <div className="flex mt-2 gap-3 relative">
+      <div className="flex flex-wrap mt-2 gap-3 relative">
         <Connect />
-        <div className="w-full h-[392px]">
+        <div className="w-full xl:w-[735px] h-[392px]">
           <Card>
             <h1 className="heading-text mb-3 ">
               Let's work <span className="text-purple-400">together.</span>

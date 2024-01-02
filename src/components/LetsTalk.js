@@ -6,15 +6,15 @@ const LetsTalk = () => {
   return (
     <div className="mt-3 w-full h-full relative">
       <Card>
-        <div className=" px-[64px] py-[2px] flex items-center gap-8">
-          <div>
+        <div className="px-2 xl:px-[64px] py-[2px] flex flex-wrap items-center gap-8">
+          <div className="m-auto">
             <img
               src={asset13}
               alt="collabrate"
-              className="w-[280px] object-cover"
+              className="w-[310px] lg:w-[280px] object-cover"
             />
           </div>
-          <div className="w-7/12">
+          <div className="w-full lg:w-7/12">
             <h1 className="text-[32px] font-semibold tracking-[0.9px] pb-[10px]">
               Ready to kickstart your project with a touch of magic?
             </h1>

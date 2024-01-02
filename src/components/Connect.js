@@ -8,7 +8,7 @@ import EastRoundedIcon from "@mui/icons-material/EastRounded";
 
 const Connect = () => {
   return (
-    <div className="w-[325px] h-[392px] relative">
+    <div className="w-full xl:w-[325px] h-[392px] relative">
       <Card>
         <h3 className="heading-text pb-6">Connect</h3>
         <div>
@@ -24,7 +24,7 @@ const Connect = () => {
             <GitHubIcon style={{ color: "white", opacity: 0.7 }} />
             <p className="text-white text-opacity-[70.0%]">GitHub</p>
           </div>
-          <div className="h-[2px] w-[259px] bg-white bg-opacity-[6.00%] mt-[72px] mb-4"></div>
+          <div className="h-[2px] w-full bg-white bg-opacity-[6.00%] mt-[72px] mb-4"></div>
           <div className="flex justify-start items-center gap-2 ">
             <div className="p-[6px]  bg-white bg-opacity-[6.00%] rounded-md">
               <img src={asset7} alt="hand" className="w-[22px]"/>

@@ -3,7 +3,7 @@ import Card from "../utils/Card";
 
 const Education = () => {
   return (
-    <div className="w-[386px] h-[392px] relative ">
+    <div className="w-full xl:w-[386px] h-[392px] relative ">
       <Card >
         <h3 className="heading-text pb-7">Education</h3>
         <div>

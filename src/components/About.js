@@ -5,7 +5,7 @@ import Connect from "./Connect";
 
 const About = () => {
   return (
-    <div className="flex gap-3 z-10">
+    <div className="flex flex-wrap gap-3 z-10">
       <Education/>
       <Skills/>
       <Connect/>

@@ -4,7 +4,7 @@ const ProjectCard = ({project}) => {
   return (
     <div
       key={project.name}
-      className="w-[32.5%] h-[290px] my-1.5 relative overflow-hidden group"
+      className="w-full md:w-[49%] xl:w-[32.5%] h-[290px] my-1.5 relative overflow-hidden group"
     >
       <div className="w-[full] h-[200px] overflow-hidden rounded-xl rounded-b-none">
         <img

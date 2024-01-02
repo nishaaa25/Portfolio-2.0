@@ -8,7 +8,7 @@ const Project = () => {
     <div className="w-full relative z-10 mt-3">
       <Card>
         <h3 className="heading-text mb-[10px] text-center">Works & Projects</h3>
-        <p className="info-text text-center w-1/2 m-auto mb-7">
+        <p className="info-text text-center w-11/12 md:w-7/12 lg:w-1/2 m-auto mb-7">
           Check out some of my projects, meticulously crafted with love
           and dedication, each one reflecting the passion and soul I poured into
           every detail.

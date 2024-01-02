@@ -8,10 +8,10 @@ import ContactSection from "./components/ContactSection";
 function App() {
   return (
     <div
-      className="App w-[1080px] m-auto"
+      className="App w-full p-[5%] xl:w-[1080px] xl:p-[0px] m-auto"
       style={{ fontFamily: "Satoshi Sans Serif" }}
     >
-      <div className="sticky top-16 z-50">
+      <div className="sticky top-6 lg:top-16 z-50">
         <Header />
       </div>
       <Outlet />
