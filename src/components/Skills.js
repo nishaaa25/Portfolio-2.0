@@ -13,7 +13,7 @@ import asset10 from "../assets/asset 10.png";
 
 const Skills = () => {
   return (
-    <div className="w-[345px] h-[392px] relative">
+    <div className="w-full h-[270px] lg:w-[345px] lg:h-[392px] relative">
       <Card>
         <h3 className="heading-text pb-7">Skills</h3>
         <div className="flex gap-4 flex-wrap ">

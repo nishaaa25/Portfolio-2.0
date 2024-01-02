@@ -16,17 +16,21 @@ const LetsTalk = () => {
           </div>
           <div className="w-7/12">
             <h1 className="text-[32px] font-semibold tracking-[0.9px] pb-[10px]">
-              Ready to kickstart your project with a touch of magic?{" "}
+              Ready to kickstart your project with a touch of magic?
             </h1>
             <p className="info-text mb-6">
               <span className="text-white">
                 Reach out and let's make it happen ✨.
               </span>
-               I'm available for Full-time or Part-time opportunities to
-              push the boundaries of mine and deliver exceptional work.
+              I'm available for freelance work, Full-time or Part-time
+              opportunities, and discussions about the latest in frontend
+              development. Whether you have a specific project in mind or just
+              want to say hello, I'm looking forward to hearing from you!
             </p>
             <div className="text-base custom-gradient px-4 py-2 rounded-3xl inline-block">
-              Let's Talk <span>🤩</span>
+              <a href="mailto:nishaaa0315@gmail.com">
+                Let's Talk <span>🤩</span>
+              </a>
             </div>
           </div>
         </div>
