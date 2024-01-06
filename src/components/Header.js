@@ -38,9 +38,9 @@ const Header = () => {
 
             <div className="hidden sm:block w-[1px] h-8 bg-white bg-opacity-10"></div>
             <div className="hidden sm:block  text-base custom-gradient px-4 py-2 rounded-3xl ">
-              <a href="mailto:nishaaa0315@gmail.com">
+              <Link to="mailto:nishaaa0315@gmail.com">
                 Say Hello! <span>👋</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -24,18 +24,10 @@ const ProjectSection = () => {
         <Connect />
         <div className="w-full xl:w-[735px] h-[392px]">
           <Card>
-            <div className="w-full flex justify-between items-center mb-4">
+            <div className="mb-4">
               <p className="text-lg font-semibold text-white text-opacity-[70.0%]">
                 Projects <span className="text-purple-400">Shots</span>
               </p>
-              <div className="text-base custom-border px-4 py-2 rounded-3xl flex-short gap-2 bg-white bg-opacity-[2.0%] custom-transition group custom-shadow hover:bg-[rgba(255,255,255,0.05)] ">
-                <p>View All </p>
-                <img
-                  src={asset82}
-                  alt="arrow"
-                  className="w-3 transform group-hover:rotate-[45deg] transition "
-                />
-              </div>
             </div>
             <div className="flex overflow-hidden gap-2">
               <img src={asset19} className="h-[266px]" alt="img" />

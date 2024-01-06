@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -12,9 +13,9 @@ const Hero = () => {
         <div className="flex items-center gap-2">
           <div className="w-[6px] h-[6px] bg-green-400 rounded-full"></div>
           <p className="info-text">
-            <a href="https://docs.google.com/document/d/1-2UI8KjtDIqJsC9zEE2oyXclVxS694PVTidnlSgwYI8/edit?usp=sharing" target="blank">
+            <Link to="https://docs.google.com/document/d/1-2UI8KjtDIqJsC9zEE2oyXclVxS694PVTidnlSgwYI8/edit?usp=sharing" target="blank">
               Download My Resume
-            </a>
+            </Link>
           </p>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import Card from "../utils/Card";
 import React from "react";
 import asset13 from "../assets/asset13.png";
+import { Link } from "react-router-dom";
 
 const LetsTalk = () => {
   return (
@@ -28,9 +29,9 @@ const LetsTalk = () => {
               want to say hello, I'm looking forward to hearing from you!
             </p>
             <div className="text-base custom-gradient px-4 py-2 rounded-3xl inline-block">
-              <a href="mailto:nishaaa0315@gmail.com">
+              <Link to="mailto:nishaaa0315@gmail.com">
                 Let's Talk <span>🤩</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>
