@@ -38,6 +38,6 @@ const AppRouter = createBrowserRouter([
       }
     ],
   },
-]);
+], {basename: "/Portfolio-2.0/"});
 
 export default AppRouter;
