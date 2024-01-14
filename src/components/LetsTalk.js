@@ -2,10 +2,12 @@ import Card from "../utils/Card";
 import React from "react";
 import asset13 from "../assets/asset13.png";
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion";
+import { customVariants } from "../utils/Motion";
 
 const LetsTalk = () => {
   return (
-    <div className="mt-3 w-full h-full relative">
+    <motion.div className="mt-3 w-full h-full relative" variants={customVariants} initial="hidden" whileInView="visible">
       <Card>
         <div className="px-2 xl:px-[64px] py-[2px] flex flex-wrap items-center gap-8">
           <div className="m-auto">
@@ -29,14 +31,14 @@ const LetsTalk = () => {
               want to say hello, I'm looking forward to hearing from you!
             </p>
             <div className="text-base custom-gradient px-4 py-2 rounded-3xl inline-block">
-              <Link to="mailto:nishaaa0315@gmail.com">
-                Let's Talk <span>🤩</span>
+              <Link to="mailto:nishaaa0315@gmail.com" >
+                <motion.p whileHover={{y:-4}}>Let's Talk <span>🤩</span></motion.p>
               </Link>
             </div>
           </div>
         </div>
       </Card>
-    </div>
+    </motion.div>
   );
 };
 

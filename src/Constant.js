@@ -10,36 +10,42 @@ export const Projects = [
     imgUrl: asset16,
     heading: "GoodFood",
     stack: "ReactJs, TailwindCSS, Redux, Swiggy's Real API",
-    url:"https://github.com/nishaaa25/Good-Food"
+    url:"https://github.com/nishaaa25/Good-Food",
+    demo: "https://nishaaa25.github.io/Good-Food/"
   },
   {
     imgUrl: asset14,
     heading: "NetflixGPT",
     stack: "ReactJs, TailwindCSS, Redux, Firebase, OpenAI API",
-    url:"https://github.com/nishaaa25/Netflix-GPT"
+    url:"https://github.com/nishaaa25/Netflix-GPT",
+    demo: "https://nishaaa25.github.io/Netflix-GPT/"
+  },
+  {
+    imgUrl: asset18,
+    heading: "MetaVerse",
+    stack: "Framer Motion, ReactJs",
+    url:"https://github.com/nishaaa25/MetaVerse",
+    demo: "https://nishaaa25.github.io/MetaVerse/"
   },
   {
     imgUrl: asset17,
     heading: "WeatherApp",
     stack: "Html, Css, Javascript",
-    url:"https://github.com/nishaaa25/Weather-App"
-  },
-  {
-    imgUrl: asset18,
-    heading: "NFTDAX",
-    stack: "ReactJs, TailwindCSS",
-    url:"https://github.com/nishaaa25/NFTDAX"
+    url:"https://github.com/nishaaa25/Weather-App",
+    demo: "https://nishaaa25.github.io/Weather-App/"
   },
   {
     imgUrl: asset15,
     heading: "Portfolio",
     stack: "Html, Css, Javascript",
-    url:"https://github.com/nishaaa25/Portfolio"
+    url:"https://github.com/nishaaa25/Portfolio",
+    demo: "https://nishaaa25.github.io/Portfolio/"
   },
   {
     imgUrl: asset19,
     heading: "TinDog",
     stack: "Html, CSS, BootStrap",
-    url:"https://github.com/nishaaa25/TinDog.git"
+    url:"https://github.com/nishaaa25/TinDog",
+    demo: "https://nishaaa25.github.io/TinDog/"
   },
 ];

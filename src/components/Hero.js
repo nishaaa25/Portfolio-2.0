@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion";
+import { customVariants } from "../utils/Motion";
 
 const Hero = () => {
   return (
-    <div className="w-full px-0 py-8 lg:py-[75px] xl:px-8 z-10">
+    <motion.div className="w-full px-0 py-8 lg:py-[78px] xl:px-8 z-10" variants={customVariants} initial="hidden" whileInView="visible">
       <div>
         <p className="text-base pb-6 text-white text-opacity-[80.0%]">Hey there!</p>
         <h1 className="text-2xl leading-[36px] md:text-[42px] md:leading-[63px] pb-6 font-semibold tracking-[0.9px]">
@@ -19,7 +21,7 @@ const Hero = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

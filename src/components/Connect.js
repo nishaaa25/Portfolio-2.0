@@ -6,10 +6,12 @@ import MailIcon from "@mui/icons-material/Mail";
 import asset7 from "../assets/asset 7.png";
 import EastRoundedIcon from "@mui/icons-material/EastRounded";
 import { Link } from "react-router-dom";
+import {motion} from "framer-motion";
+import { customVariants } from "../utils/Motion";  
 
 const Connect = () => {
   return (
-    <div className="w-full xl:w-[325px] h-[392px] relative">
+    <motion.div className="w-full xl:w-[325px] h-[392px] relative"  variants={customVariants} initial="hidden" whileInView="visible">
       <Card>
         <h3 className="heading-text pb-6">Connect</h3>
         <div>
@@ -51,7 +53,7 @@ const Connect = () => {
           </div>
         </div>
       </Card>
-    </div>
+    </motion.div>
   );
 };
 

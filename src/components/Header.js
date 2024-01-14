@@ -4,8 +4,11 @@ import asset53 from "../assets/asset 53.svg";
 import asset54 from "../assets/asset 54.svg";
 import asset56 from "../assets/asset 56.svg";
 import { Link } from "react-router-dom";
+import { useLocation } from 'react-router-dom';
+import { motion } from "framer-motion";
 
 const Header = () => {
+  const location = useLocation();
   return (
     <div className="w-full pb-7 h-[100px] lg:h-[158px]">
       <div className="w-[220px] sm:w-[380px] m-auto bg-black bg-opacity-[6.00%] p-[6px] rounded-[55px] custom-border backdrop-blur-md">
@@ -17,12 +20,12 @@ const Header = () => {
               </div>
             </div>
             <Link to="/">
-              <div className="w-10 h-10 flex-short rounded-full custom-border box-shadow">
+              <div className={`w-10 h-10 ${location.pathname === "/"? "active":""} flex-short rounded-full custom-border box-shadow`}>
                 <img src={asset53} alt="logo" className="w-[22]" />
               </div>
             </Link>
             <Link to="/project">
-              <div className="w-10 h-10 flex-short rounded-full custom-border box-shadow">
+              <div className={`w-10 h-10 ${location.pathname === "/project"? "active":""} flex-short rounded-full custom-border box-shadow`}>
                 <img src={asset54} alt="logo" className="w-[22]" />
               </div>
             </Link>
@@ -31,15 +34,15 @@ const Header = () => {
               <img src={asset55} alt="logo" className="w-[22]" />
             </div> */}
             <Link to="/contact">
-              <div className="w-10 h-10 flex-short rounded-full custom-border box-shadow ">
+              <div className={`w-10 h-10 ${location.pathname === "/contact"? "active":""} flex-short rounded-full custom-border box-shadow`}>
                 <img src={asset56} alt="logo" className="w-[22]" />
               </div>
             </Link>
 
             <div className="hidden sm:block w-[1px] h-8 bg-white bg-opacity-10"></div>
-            <div className="hidden sm:block  text-base custom-gradient px-4 py-2 rounded-3xl ">
-              <Link to="mailto:nishaaa0315@gmail.com">
-                Say Hello! <span>👋</span>
+            <div className="hidden sm:block  text-base custom-gradient px-4 py-2 rounded-3xl " >
+              <Link to="mailto:nishaaa0315@gmail.com" >
+                <motion.p whileHover={{y:-4}}>Say Hello! <span >👋</span></motion.p>
               </Link>
             </div>
           </div>

@@ -4,6 +4,8 @@ import Connect from "./Connect";
 import Card from "../utils/Card";
 import LetsTalk from "./LetsTalk";
 import Footer from "./Footer";
+import {motion} from "framer-motion";
+import { customVariants } from "../utils/Motion";
 
 const ContactSection = () => {
   const [message, setMessage] = useState(false);
@@ -32,18 +34,18 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="w-full pt-8 lg:pt-[72px] z-10">
-      <h1 className="text-3xl lg:text-[42px] mb-2 lg:mb-6 font-semibold tracking-[0.9px]">
+    <motion.div className="w-full pt-8 lg:pt-[72px] z-10" initial="hidden" whileInView="visible">
+      <motion.h1 className="text-3xl lg:text-[42px] mb-2 lg:mb-6 font-semibold tracking-[0.9px]" variants={customVariants}  >
         Contact Me
-      </h1>
-      <p className="text-xl lg:text-2xl text-white text-opacity-[50.0%] mb-12">
+      </motion.h1>
+      <motion.p className="text-xl lg:text-2xl text-white text-opacity-[50.0%] mb-12" variants={customVariants} >
         Thank you for exploring my portfolio! If you have any inquiries or
         opportunities, feel free to get in touch. I'm always open to
         collaboration and new challenges.
-      </p>
+      </motion.p>
       <div className="flex flex-wrap mt-2 gap-3 relative">
         <Connect />
-        <div className="w-full xl:w-[735px] h-[392px]">
+        <motion.div className="w-full xl:w-[735px] h-[392px]" variants={customVariants} >
           <Card>
             <h1 className="heading-text mb-3 ">
               Let's work <span className="text-purple-400">together.</span>
@@ -77,11 +79,11 @@ const ContactSection = () => {
               {message&& <p className="text-sm text-white text-opacity-[50.0%] mt-2 mx-2">Thank you for your message. It has been sent.</p>}
             </div>
           </Card>
-        </div>
+        </motion.div>
       </div>
       <LetsTalk />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

@@ -7,16 +7,24 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   background-color: #0d0d0f;
-  color:white;
+  color: white;
+  scroll-behavior: smooth;
 }
 @font-face {
-  font-family: 'Satoshi Sans Serif';
-  src: url('../public/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff2') format('woff2'),
-       url('../public/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff') format('woff');
-  font-weight:normal;
+  font-family: "Satoshi Sans Serif";
+  src: url("../public/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff2")
+      format("woff2"),
+    url("../public/fonts/Satoshi_Complete/Fonts/WEB/fonts/Satoshi-Medium.woff")
+      format("woff");
+  font-weight: normal;
   font-style: normal;
+}
+.active{
+  border: 1.5px;
+  background: radial-gradient(100% 100% at 50% 106.2%, rgba(255, 255, 255, 0.16) 0%, rgba(171, 171, 171, 0.01) 100%);
+  box-shadow: rgba(255, 255, 255, 0.016) 0px 0.4829px 0.33803px -0.125px inset, rgba(255, 255, 255, 0.094) 0px 4px 2.8px -0.25px inset
 }
 .box-shadow {
   box-shadow: rgba(255, 255, 255, 0.06) 0px 0.362176px 0.507046px -0.75px inset,
@@ -44,23 +52,23 @@ body{
   );
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0.5px 1.5px inset;
 }
-.shadow-hover{
-    box-shadow: rgba(255,255,255,0.35) 0px -2px 1px 1px inset;
+.shadow-hover {
+  box-shadow: rgba(255, 255, 255, 0.35) 0px -2px 1px 1px inset;
 }
-@layer components{
-  .card{
-    @apply bg-white bg-opacity-[2.0%] rounded-lg p-8 custom-border hover:cursor-pointer
+@layer components {
+  .card {
+    @apply bg-white bg-opacity-[2.0%] rounded-lg p-8 custom-border hover:cursor-pointer;
   }
 }
 @layer utilities {
-  .custom-transition{
-  @apply transition-all duration-300;
+  .custom-transition {
+    @apply transition-all duration-300;
   }
-  .heading-text{
-    @apply text-lg text-white text-opacity-[80.0%] font-[600] tracking-[0.6px]
+  .heading-text {
+    @apply text-lg text-white text-opacity-[80.0%] font-[600] tracking-[0.6px];
   }
-  .info-text{
-    @apply text-[12px] text-white text-opacity-[50.0%]
+  .info-text {
+    @apply text-[12px] text-white text-opacity-[50.0%];
   }
   .custom-border {
     @apply border border-white border-opacity-[3.00%];

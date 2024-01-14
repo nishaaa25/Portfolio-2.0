@@ -12,7 +12,7 @@ const HomeSection = () => {
       <About />
       <Project />
       <LetsTalk />
-    <Footer/>
+      <Footer />
     </div>
   );
 };

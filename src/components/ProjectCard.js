@@ -8,14 +8,23 @@ const ProjectCard = ({ project }) => {
       key={project.name}
       className="w-full md:w-[49%] xl:w-[32.5%] h-[290px] my-1.5 relative overflow-hidden group"
     >
-      <div className="w-[full] h-[200px] overflow-hidden rounded-xl rounded-b-none ">
+      <div className="w-[full] h-[200px] relative overflow-hidden rounded-xl rounded-b-none group">
         <img
           src={project.imgUrl}
           alt="projectimg"
           className="w-full h-full scale-[1.3] object-cover custom-transition group-hover:scale-[1.8]"
         />
+        <div className="absolute top-0 left-0 w-full h-full">
+          <div className="bg-black w-full h-full flex justify-center items-center bg-opacity-70 opacity-0 group-hover:opacity-100 transition duration-700">
+            <Link
+              to={project.demo}
+              className="py-3 px-6 rounded-full cursor-pointer text-white border-2 border-white hover:bg-white hover:bg-opacity-30"
+            >
+              Demo
+            </Link>
+          </div>
+        </div>
       </div>
-
       <div className="h-[90px] relative w-full rounded-t-none rounded-xl p-4 bg-white bg-opacity-[2.0%] custom-border custom-shadow border-t-0">
         <p className="heading-text pb-[6px]">{project.heading}</p>
         <p className="info-text">{project.stack}</p>

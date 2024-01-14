@@ -10,10 +10,13 @@ import asset9 from "../assets/asset 9.png";
 import asset11 from "../assets/asset11.png";
 import asset12 from "../assets/asset12.png";
 import asset10 from "../assets/asset 10.png";
+import asset21 from "../assets/asset21.png";
+import {motion} from "framer-motion";
+import { customVariants } from "../utils/Motion";
 
 const Skills = () => {
   return (
-    <div className="w-full min-h-[270px] md:h-[200px] xl:w-[345px] xl:h-[392px] relative">
+    <motion.div className="w-full min-h-[270px] md:h-[200px] xl:w-[345px] xl:h-[392px] relative" variants={customVariants} initial="hidden" whileInView="visible">
       <Card>
         <h3 className="heading-text pb-7">Skills</h3>
         <div className="flex gap-4 flex-wrap ">
@@ -27,9 +30,10 @@ const Skills = () => {
           <img src={asset9} alt="html" className="w-[52px] h-[52px] mb-2" />
           <img src={asset10} alt="html" className="w-[52px] h-[52px] mb-2" />
           <img src={asset11} alt="html" className="w-[52px] h-[52px] mb-2" />      
+          <img src={asset21} alt="html" className="w-[52px] h-[52px] mb-2" />      
         </div>
       </Card>
-    </div>
+    </motion.div>
   );
 };
 

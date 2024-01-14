@@ -1,45 +1,64 @@
 import React from "react";
 import ProjectContainer from "./ProjectContainer";
 import Connect from "./Connect";
-import asset82 from "../assets/asset 82.svg";
 import Card from "../utils/Card";
-import asset19 from "../assets/asset19.png";
+import asset22 from "../assets/asset22.png";
 import asset20 from "../assets/asset20.png";
-import asset21 from "../assets/asset21.png";
+import asset23 from "../assets/asset23.png";
+import asset25 from "../assets/asset25.png";
+import asset24 from "../assets/asset24.png";
 import Footer from "./Footer";
 import LetsTalk from "./LetsTalk";
+import { motion } from "framer-motion";
+import { customVariants } from "../utils/Motion";
 
 const ProjectSection = () => {
   return (
-    <div className="w-full pt-8 lg:pt-[72px] z-10">
-      <h1 className="text-3xl lg:text-[42px] mb-2 lg:mb-6 font-semibold tracking-[0.9px]">
+    <motion.div
+      className="w-full pt-8 lg:pt-[72px] z-10"
+      initial="hidden"
+      whileInView="visible"
+    >
+      <motion.h1
+        className="text-3xl lg:text-[42px] mb-2 lg:mb-6 font-semibold tracking-[0.9px]"
+        variants={customVariants}
+      >
         Projects
-      </h1>
-      <p className="text-xl lg:text-2xl text-white text-opacity-[50.0%] mb-12">
+      </motion.h1>
+      <motion.p
+        className="text-xl lg:text-2xl text-white text-opacity-[50.0%] mb-12"
+        variants={customVariants}
+      >
         Check out some of my personal projects, meticulously crafted with love
         and dedication.
-      </p>
-      <ProjectContainer />
+      </motion.p>
+      <motion.div variants={customVariants}>
+        <ProjectContainer projectToShow={6} />
+      </motion.div>
       <div className="flex flex-wrap mt-2 gap-3 relative">
         <Connect />
-        <div className="w-full xl:w-[735px] h-[392px]">
+        <motion.div className="w-full xl:w-[735px] h-[392px]" variants={customVariants} initial="hidden" whileInView="visible">
           <Card>
-            <div className="mb-4">
-              <p className="text-lg font-semibold text-white text-opacity-[70.0%]">
-                Projects <span className="text-purple-400">Shots</span>
-              </p>
-            </div>
-            <div className="flex overflow-hidden gap-2">
-              <img src={asset19} className="h-[266px]" alt="img" />
-              <img src={asset20} className="h-[266px]" alt="img" />
-              <img src={asset21} className="h-[266px]" alt="img" />
+            <div>
+              <div className="mb-4">
+                <p className="text-lg font-semibold text-white text-opacity-[70.0%]">
+                  Projects <span className="text-purple-400">Shots</span>
+                </p>
+              </div>
+              <div className="flex overflow-hidden gap-2">
+                <img src={asset24} className="h-[266px] rounded-lg" alt="img" />
+                <img src={asset22} className="h-[266px] rounded-lg" alt="img" />
+                <img src={asset25} className="h-[266px] rounded-lg" alt="img" />
+                <img src={asset20} className="h-[266px] rounded-lg" alt="img" />
+                <img src={asset23} className="h-[266px] rounded-lg" alt="img" />
+              </div>
             </div>
           </Card>
-        </div>
+        </motion.div>
       </div>
       <LetsTalk />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

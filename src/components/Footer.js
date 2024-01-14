@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+import {motion} from "framer-motion";
+import { customVariants } from "../utils/Motion";
 
 const Footer = () => {
   return (
-    <div className='py-6 text-center'>
+    <motion.div className='py-6 text-center' variants={customVariants} initial="hidden" whileInView="visible">
         <p className='info-text'>&copy; 2024, <span className='text-white'>Nisha Kumari </span>❤️</p>
-      </div>
+      </motion.div>
   )
 }
 

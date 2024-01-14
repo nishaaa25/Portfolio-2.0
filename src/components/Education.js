@@ -1,9 +1,12 @@
 import React from "react";
 import Card from "../utils/Card";
+import {motion} from "framer-motion";
+import { customVariants } from "../utils/Motion";
+
 
 const Education = () => {
   return (
-    <div className="w-full xl:w-[386px] h-[392px] relative ">
+    <motion.div className="w-full xl:w-[386px] h-[392px] relative "  variants={customVariants} initial="hidden" whileInView="visible">
       <Card >
         <h3 className="heading-text pb-7">Education</h3>
         <div>
@@ -60,7 +63,7 @@ const Education = () => {
           </div>
         </div>
       </Card>
-    </div>
+    </motion.div>
   );
 };
 
