@@ -16,21 +16,21 @@ import { customVariants } from "../utils/Motion";
 
 const Skills = () => {
   return (
-    <motion.div className="w-full min-h-[270px] md:h-[200px] xl:w-[345px] xl:h-[392px] relative" variants={customVariants} initial="hidden" whileInView="visible">
+    <motion.div className="w-full xl:w-[345px]  relative" variants={customVariants} initial="hidden" whileInView="visible">
       <Card>
-        <h3 className="heading-text pb-7">Skills</h3>
-        <div className="flex gap-4 flex-wrap ">
-          <img src={asset2} alt="html" className="w-[52px] h-[52px] mb-2" />
-          <img src={asset3} alt="css" className="w-[52px] h-[52px] mb-2" />
-          <img src={asset4} alt="js" className="w-[52px] h-[52px] mb-2" />
-          <img src={asset5} alt="react" className="w-[52px] h-[52px] mb-2" />
-          <img src={asset6} alt="tailwind" className="w-[52px] h-[52px] mb-2" />
-          <img src={asset12} alt="html" className="w-[52px] h-[52px] mb-2" />
-          <img src={asset8} alt="html" className="w-[52px] h-[52px] mb-2" />
-          <img src={asset9} alt="html" className="w-[52px] h-[52px] mb-2" />
-          <img src={asset10} alt="html" className="w-[52px] h-[52px] mb-2" />
-          <img src={asset11} alt="html" className="w-[52px] h-[52px] mb-2" />      
-          <img src={asset21} alt="html" className="w-[52px] h-[52px] mb-2" />      
+        <h3 className="heading-text pb-4">Skills</h3>
+        <div className="grid grid-cols-6 justify-start">
+          <img src={asset2} alt="html" className="w-[40px] h-[40px] mb-2" />
+          <img src={asset3} alt="css" className="w-[40px] h-[40px] mb-2" />
+          <img src={asset4} alt="js" className="w-[40px] h-[40px] mb-2" />
+          <img src={asset5} alt="react" className="w-[40px] h-[40px] mb-2" />
+          <img src={asset6} alt="tailwind" className="w-[40px] h-[40px] mb-2" />
+          <img src={asset12} alt="html" className="w-[40px] h-[40px] mb-2" />
+          <img src={asset8} alt="html" className="w-[40px] h-[40px] mb-2" />
+          <img src={asset9} alt="html" className="w-[40px] h-[40px] mb-2" />
+          <img src={asset10} alt="html" className="w-[40px] h-[40px] mb-2" />
+          <img src={asset11} alt="html" className="w-[40px] h-[40px] mb-2" />      
+          <img src={asset21} alt="html" className="w-[40px] h-[40px] mb-2" />      
         </div>
       </Card>
     </motion.div>

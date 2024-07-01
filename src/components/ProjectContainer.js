@@ -7,7 +7,7 @@ const ProjectContainer = ({projectToShow}) => {
   return (
     <div className="flex justify-between items-center flex-wrap relative" >
       {Projects.slice(0, projectToShow).map((project, index) => {
-        return <ProjectCard project={project} />;
+        return <ProjectCard project={project } key={index} />;
       })}
     </div>
   );

@@ -2,10 +2,10 @@ import React from "react";
 import asset82 from "../assets/asset 82.svg";
 import { Link } from "react-router-dom";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, index }) => {
   return (
     <div
-      key={project.name}
+      key={index}
       className="w-full md:w-[49%] xl:w-[32.5%] h-[290px] my-1.5 relative overflow-hidden group"
     >
       <div className="w-[full] h-[200px] relative overflow-hidden rounded-xl rounded-b-none group">

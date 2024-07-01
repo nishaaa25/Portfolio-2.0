@@ -5,6 +5,7 @@ import { Outlet, createBrowserRouter } from "react-router-dom";
 import ProjectSection from "./components/ProjectSection";
 import ContactSection from "./components/ContactSection";
 
+
 function App() {
   return (
     <div
@@ -19,25 +20,28 @@ function App() {
   );
 }
 
-const AppRouter = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-    children: [
-      {
-        path: "/",
-        element: <HomeSection />,
-      },
-      {
-        path:"/project",
-        element:<ProjectSection/>
-      },
-      {
-        path:"/contact",
-        element:<ContactSection/>
-      }
-    ],
-  },
-], {basename: "/Portfolio-2.0/"});
+const AppRouter = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          path: "/",
+          element: <HomeSection />,
+        },
+        {
+          path: "/project",
+          element: <ProjectSection />,
+        },
+        {
+          path: "/contact",
+          element: <ContactSection />,
+        },
+      ],
+    },
+  ],
+  { basename: "/Portfolio-2.0" } // Ensure the basename matches your URL structure
+);
 
 export default AppRouter;

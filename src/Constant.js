@@ -1,5 +1,6 @@
 import asset14 from "./assets/asset14.png";
-import asset15 from "./assets/asset15.png";
+// import asset15 from "./assets/asset15.png";
+import asset26 from "./assets/asset26.png";
 import asset16 from "./assets/asset16.png";
 import asset17 from "./assets/asset17.png";
 import asset18 from "./assets/asset18.png";
@@ -19,6 +20,12 @@ export const Projects = [
     stack: "ReactJs, TailwindCSS, Redux, Firebase, OpenAI API",
     url:"https://github.com/nishaaa25/Netflix-GPT",
     demo: "https://nishaaa25.github.io/Netflix-GPT/"
+  },{
+    imgUrl: asset26,
+    heading: "Confetto",
+    stack: "ReactJs, TailwindCSS, Framer Motion",
+    url:"https://github.com/nishaaa25/Confetto",
+    demo: "https://nishaaa25.github.io/Confetto/"
   },
   {
     imgUrl: asset18,
@@ -27,19 +34,13 @@ export const Projects = [
     url:"https://github.com/nishaaa25/MetaVerse",
     demo: "https://nishaaa25.github.io/MetaVerse/"
   },
+  
   {
     imgUrl: asset17,
     heading: "WeatherApp",
     stack: "Html, Css, Javascript",
     url:"https://github.com/nishaaa25/Weather-App",
     demo: "https://nishaaa25.github.io/Weather-App/"
-  },
-  {
-    imgUrl: asset15,
-    heading: "Portfolio",
-    stack: "Html, Css, Javascript",
-    url:"https://github.com/nishaaa25/Portfolio",
-    demo: "https://nishaaa25.github.io/Portfolio/"
   },
   {
     imgUrl: asset19,
