@@ -23,7 +23,7 @@ const Education = () => {
                 B.N.Mandal University, Madhepura, Bihar, India
               </p>
               <p className="info-text">
-                2022-2025 - <span>90.75%</span>
+                2021-2024 - <span>8.7 GPA</span>
               </p>
             </div>
           </div>
@@ -40,7 +40,7 @@ const Education = () => {
                 K.V.NTPC Shaktinagar, Sonebhadra, U.P, India
               </p>
               <p className="info-text">
-                2020-2022 - <span>80.4%</span>
+                2019-2021 - <span>80.4%</span>
               </p>
             </div>
           </div>
@@ -57,7 +57,7 @@ const Education = () => {
                 K.V.NTPC Shaktinagar, Sonebhadra, U.P, India
               </p>
               <p className="info-text">
-                2019-2020 - <span>77.4%</span>
+                2017-2019 - <span>77.4%</span>
               </p>
             </div>
           </div>
