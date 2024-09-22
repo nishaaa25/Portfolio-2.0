@@ -15,7 +15,7 @@ const Hero = () => {
         <div className="flex items-center gap-2">
           <div className="w-[6px] h-[6px] bg-green-400 rounded-full"></div>
           <p className="info-text">
-            <Link to="https://docs.google.com/document/d/1-2UI8KjtDIqJsC9zEE2oyXclVxS694PVTidnlSgwYI8/edit?usp=sharing" target="blank">
+            <Link to="https://docs.google.com/document/d/10oH0lvrdaYZbR7y050BVA2nmgfGelJqlpcwRa0yu1qA/edit?usp=sharing" target="blank">
               Download My Resume
             </Link>
           </p>
