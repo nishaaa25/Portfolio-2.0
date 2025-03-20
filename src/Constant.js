@@ -29,17 +29,17 @@ export const Projects = [
   },
   {
     imgUrl: asset18,
-    heading: "MetaVerse",
-    stack: "Framer Motion, ReactJs",
-    url: "https://github.com/nishaaa25/MetaVerse",
-    demo: "https://nishaaa25.github.io/MetaVerse/",
+    heading: "Sera",
+    stack: "NextJs, Locomotive Scroll, GSAP",
+    url: "https://jewel-nisha-kumaris-projects-a5296b77.vercel.app/",
+    demo: "https://github.com/nishaaa25/jewel",
   },
   {
     imgUrl: asset14,
-    heading: "NetflixGPT",
-    stack: "ReactJs, TailwindCSS, Redux, Firebase, OpenAI API",
+    heading: "iDeveloper",
+    stack: "ReactJs, TailwindCSS, Framer Motion",
     url: "https://github.com/nishaaa25/Netflix-GPT",
-    demo: "https://nishaaa25.github.io/Netflix-GPT/",
+    demo: "https://ideveloper-agency-1hzi035er-nisha-kumaris-projects-a5296b77.vercel.app/",
   },
 
   {
