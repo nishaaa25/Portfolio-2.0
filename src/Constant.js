@@ -31,14 +31,14 @@ export const Projects = [
     imgUrl: asset18,
     heading: "Sera",
     stack: "NextJs, Locomotive Scroll, GSAP",
-    url: "https://jewel-nisha-kumaris-projects-a5296b77.vercel.app/",
-    demo: "https://github.com/nishaaa25/jewel",
+    url: "https://github.com/nishaaa25/jewel",
+    demo: "https://jewel-nisha-kumaris-projects-a5296b77.vercel.app/",
   },
   {
     imgUrl: asset14,
     heading: "iDeveloper",
     stack: "ReactJs, TailwindCSS, Framer Motion",
-    url: "https://github.com/nishaaa25/Netflix-GPT",
+    url: "https://github.com/nishaaa25/iDeveloper-Agency",
     demo: "https://ideveloper-agency-1hzi035er-nisha-kumaris-projects-a5296b77.vercel.app/",
   },
 
