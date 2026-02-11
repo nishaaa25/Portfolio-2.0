@@ -4,7 +4,6 @@ import asset16 from "./assets/asset16.png";
 import asset17 from "./assets/asset17.png";
 import asset18 from "./assets/asset18.png";
 import asset19 from "./assets/asset19.jpg";
-import asset28 from "./assets/asset28.png";
 
 export const Projects = [
   {
