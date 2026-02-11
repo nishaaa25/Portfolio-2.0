@@ -23,7 +23,7 @@ const Education = () => {
                 B.N.Mandal University, Madhepura, Bihar, India
               </p>
               <p className="info-text">
-                2021-2024 - <span>8.7 GPA</span>
+                2022-2025 - <span>8.7 GPA</span>
               </p>
             </div>
           </div>
