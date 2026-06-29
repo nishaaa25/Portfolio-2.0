@@ -41,7 +41,7 @@ const AppRouter = createBrowserRouter(
       ],
     },
   ],
-  { basename: "/Portfolio-2.0" } // Ensure the basename matches your URL structure
+  { basename: "/" } // Ensure the basename matches your URL structure
 );
 
 export default AppRouter;
