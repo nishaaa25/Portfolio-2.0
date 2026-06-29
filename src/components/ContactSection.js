@@ -44,10 +44,10 @@ const ContactSection = () => {
         collaboration and new challenges.
       </motion.p>
       <div className="flex flex-wrap lg:flex-nowrap mt-2 gap-3 relative">
-        <div>
+        <div className="w-full lg:w-[30%] relative">
           <Connect />
         </div>
-        <motion.div className="w-ful lg:w-10/12 h-[410px] relative" variants={customVariants} >
+        <motion.div className="w-full lg:w-[70%] h-[390px] relative" variants={customVariants} >
           <Card>
             <h1 className="heading-text mb-3 ">
               Let's work <span className="text-purple-400">together.</span>
