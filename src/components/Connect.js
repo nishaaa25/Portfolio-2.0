@@ -11,7 +11,7 @@ import { customVariants } from "../utils/Motion";
 
 const Connect = () => {
   return (
-    <motion.div className="w-full xl:w-[325px] h-[392px] relative"  variants={customVariants} initial="hidden" whileInView="visible">
+    <motion.div className="w-full relative"  variants={customVariants} initial="hidden" whileInView="visible">
       <Card>
         <h3 className="heading-text pb-6">Connect</h3>
         <div>

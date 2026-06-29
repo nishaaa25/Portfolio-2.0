@@ -33,11 +33,13 @@ const ProjectSection = () => {
         and dedication.
       </motion.p>
       <motion.div variants={customVariants}>
-        <ProjectContainer projectToShow={6} />
+        <ProjectContainer  />
       </motion.div>
-      <div className="flex flex-wrap mt-2 gap-3 relative">
-        <Connect />
-        <motion.div className="w-full xl:w-[735px] h-[392px]" variants={customVariants} initial="hidden" whileInView="visible">
+      <div className="flex flex-wrap md:flex-nowrap mt-2 gap-3 relative">
+        <div className="w-full lg:w-4/12 relative">
+          <Connect />
+        </div>
+        <motion.div className="w-full lg:w-8/12 h-[392px]" variants={customVariants} initial="hidden" whileInView="visible">
           <Card>
             <div>
               <div className="mb-4">

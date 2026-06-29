@@ -16,7 +16,7 @@ import { customVariants } from "../utils/Motion";
 
 const Skills = () => {
   return (
-    <motion.div className="w-full xl:w-[345px]  relative" variants={customVariants} initial="hidden" whileInView="visible">
+    <motion.div className="w-full flex-1  relative" variants={customVariants} initial="hidden" whileInView="visible">
       <Card>
         <h3 className="heading-text pb-4">Skills</h3>
         <div className="grid grid-cols-6 justify-start">

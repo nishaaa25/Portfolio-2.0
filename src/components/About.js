@@ -9,12 +9,12 @@ import Experience from "./Experience";
 const About = () => {
   return (
     <motion.div
-      className="flex flex-wrap gap-3 z-10"
+      className="grid grid-cols-1 lg:grid-cols-3 gap-3  z-10"
       variants={customVariants}
       initial="hidden"
       whileInView="visible"
     >
-      <div className="w-full min-h-[270px] md:h-[200px] xl:w-[345px] xl:h-[392px] flex flex-col gap-3 relative">
+      <div className="w-full flex flex-1 flex-col md:flex-row lg:flex-col gap-3 relative">
         <Experience />
         <Skills />
       </div>

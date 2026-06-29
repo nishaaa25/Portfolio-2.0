@@ -43,9 +43,11 @@ const ContactSection = () => {
         opportunities, feel free to get in touch. I'm always open to
         collaboration and new challenges.
       </motion.p>
-      <div className="flex flex-wrap mt-2 gap-3 relative">
-        <Connect />
-        <motion.div className="w-full xl:w-[735px] h-[392px]" variants={customVariants} >
+      <div className="flex flex-wrap lg:flex-nowrap mt-2 gap-3 relative">
+        <div>
+          <Connect />
+        </div>
+        <motion.div className="w-ful lg:w-10/12 h-[410px] relative" variants={customVariants} >
           <Card>
             <h1 className="heading-text mb-3 ">
               Let's work <span className="text-purple-400">together.</span>
